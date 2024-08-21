@@ -1,24 +1,8 @@
-/*#include <stdio.h>
+//LISTA 1
 
-int main (){
-	int num1, num2, soma, dif;
-	printf("Exercicio 1.\n");
-	printf("Digite o primeiro numero: \n");
-	scanf("%d", &num1);
-	printf("Digite o segundo numero: \n");
-	scanf("%d", &num2);
-	soma = num1 + num2;
-	dif = num1 - num2;
-	printf("A soma dos numeros e %d, a diferença deles e %d.\n", soma, dif);
-	
-	
-	
-	return 0;
-}*/
+/*EXERCICIO 01
 
-//exercicio1
-
-/*#include <stdio.h>
+#include <stdio.h>
 
 int main (){
 	float num1, num2, num3, num4, num5, soma, media;
@@ -31,7 +15,7 @@ int main (){
 	return 0;
 }*/
 
-//exercicio2
+/*EXERCICIO 02
 
 /*#include <stdio.h>
 
@@ -45,9 +29,9 @@ int main (){
 	return 0;
 }*/
 
-//exercicio3
+/*EXERCICIO 03
 
-/*#include <stdio.h>
+#include <stdio.h>
 
 int main (){
 	int num1, num2, num3, d, r, s;
@@ -61,9 +45,9 @@ int main (){
 	return 0;
 }*/
 
-//exercicio4
+/*EXERCICIO 04
 
-/*#include <stdio.h>
+#include <stdio.h>
 
 int main(){
 	int raio, volume, area;
@@ -76,31 +60,84 @@ int main(){
 	return 0;
 }*/
 
-//exercicio5
+/* EXERCICIO 05
 
-/*#include <stdio.h>
+#include <stdio.h>
 
-int main(){
+int main (){
 	float saldo, reajuste, novosaldo;
-	printf("digite o saldo: \n");
+	printf("Digite seu saldo atual\n");
 	scanf("%f", &saldo);
-	reajuste = saldo / 100 * 5;
-	printf("o reajuste foi de: %2.f\n", reajuste);
+	reajuste = (saldo / 100) * 5;
 	novosaldo = saldo + reajuste;
-	printf("o novo saldo e: %2.f\n", novosaldo);
+	printf("antigo saldo: %2.f \nreajuste: %2.f \nnovo saldo: %2.f\n", saldo, reajuste, novosaldo);
 	
 	return 0;
 }*/
 
-//exercicio6
+/*EXERCICIO 06
+
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+	float lado1, lado2, lado3, area, te, raiz;
+	printf("digite os lados do triangulo: \n");
+	scanf("%f %f %f", &lado1, &lado2, &lado3);
+	te = (lado1 + lado2 + lado3) / 2;
+	raiz = te * (te - lado1) * (te - lado2) * (te - lado3);
+	area = sqrt(raiz);
+	printf("a area do triangulo: %f\n", area);
+	
+	
+	return 0;
+}*/
+
+/*EXERCICIO 07
 
 #include <stdio.h>
 
 int main(){
-	
-	
-	
-	
+	int comprimento, largura, aream2, wattsnec;
+	printf("Digite o comprimento e a largura do ambiente: \n");
+	scanf("%d %d", &largura, &comprimento);
+	aream2 = largura * comprimento;
+	printf("Area em metros quadrados: %d\n", aream2);
+	wattsnec = aream2 * 18;
+	printf("Watts necessarios para iluminar o ambiente: %dw\n", wattsnec);
+		
 	return 0;
-}
+}*/
 
+/*EXERCICIO 08
+
+#include <stdio.h>
+
+int main(){
+	int num, dezenas, unidades, soma;
+	printf("digite um numero: \n");
+	scanf("%d", &num);
+	unidades = num % 10;
+	printf("%d\n", unidades);
+	dezenas = (num / 10) % 10;
+	printf("%d\n", dezenas);
+	soma = unidades + dezenas;
+	printf("a soma da dezena e unidade: %d", soma);
+}*/
+
+/*EXERCICIO 09
+
+#include <stdio.h>
+
+int main(){
+	int a, b, troca1, troca2;
+	printf("Digite o valor de A: \n");
+	scanf("%d", &a);
+	printf("Digite o valor de B: \n");
+	scanf("%d", &b);
+	troca1 = (a + b) - a;
+	troca2 = (a + b) - b;
+	printf("novo valor de a: %d\nnovo valor de b: %d", troca1, troca2);
+	
+	return 0;
+}*/
