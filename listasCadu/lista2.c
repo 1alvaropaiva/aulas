@@ -216,7 +216,7 @@ int main(){
 }
 */
 
-
+/*exercicio 7
 #include <stdio.h>
 
 int main (){
@@ -251,19 +251,130 @@ int main (){
 		break;	
 	}
 	
+	return 0;
+}*/
+
+
+
+/* exercicio 8
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	float peso, altura, imc;
+	char nome[10];
 	
+	printf("digite seu nome: \n");
+	scanf("%s", nome);
+	printf("Digite seu peso e altura: \n");
+	scanf("%f %f", &peso, &altura);
+	if (peso < 0 || altura < 0){
+		printf("Digite apenas numeros positivos");
+		exit(0);
+	} 
+	
+	
+	imc = peso / (altura*altura);	
+	if (imc < 20 && imc >0){
+		printf("Ola %s, seu imc e %.2f e sua classificacao e: abaixo do peso", nome, imc);
+	} else if (imc < 25 && imc > 20){
+		printf("Ola %s, seu imc e %.2f e sua classificacao e: normal", nome, imc);
+	} else if (imc < 30 && imc > 25){
+		printf("Ola %s, seu imc e %.2f e sua classificacao e: excesso de peso", nome, imc);
+	} else if (imc < 35 && imc > 30){
+		printf("Ola %s, seu imc e %.2f e sua classificacao e: obesidade", nome, imc);
+	} else {
+		printf("Ola %s, seu imc e %.2f e sua classificacao e: obesidade mórbida", nome, imc);
+	}
+	
+	return 0;
+}*/
+
+
+/*exercicio 9
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main (){
+	
+	float nota1, nota2, media;
+	printf("Digite suas notas: \n");
+	scanf("%f %f", &nota1, &nota2);
+	
+	if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 ){
+		printf("Digite o valor certo.");
+		exit(0);
+	} else {
+		printf("Nota 1: %.2f\nNota 2: %.2f\n", nota1, nota2);
+	}
+	
+	media = (nota1 + nota2) /2;
+	if (media < 4 ){
+		printf("Reprovado.\nMedia: %.2f", media);
+		exit(0);
+	} else if (media >= 4 && media < 6) {
+		printf("Em exame final.\nMedia atual: %.2f\n", media);
+	} else {
+		printf("Aprovado.\nMedia: %.2f", media);
+		exit(0);
+	}
+	
+	float exame_final, nota_final;
+	printf("Digite sua nota do exame final: \n");
+	scanf("%f", &exame_final);
+	if (exame_final > 10 || exame_final < 0){
+		printf("Digite o valor correto.");
+		exit(0);
+	}
+	
+	nota_final = (media + exame_final) / 2;
+	if (nota_final >= 6){
+		printf("Aprovado no exame final. Media: %.2f", nota_final);
+		exit(0);
+	} else {
+		printf("Reprovado. Media: %.2f", nota_final);
+	}
 	
 	
 	return 0;
-}
+}*/
 
 
+/* exercicio 10
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
+    int coA, coB, coC;
+    float delta, x1, x2;
 
+    printf("Digite os coeficientes A, B e C da equacao do segundo grau: \n");
+    scanf("%d %d %d", &coA, &coB, &coC);
 
+    if (coA == 0) {
+        printf("O coeficiente A nao pode ser zero.\n");
+        exit(0); 
+    }
 
+    delta = (coB * coB) - 4 * coA * coC;
+    printf("O valor de delta e: %.2f\n", delta);
 
+    if (delta > 0) {
+        x1 = (-coB + sqrt(delta)) / (2 * coA);
+        x2 = (-coB - sqrt(delta)) / (2 * coA);
+        printf("As raizes da equacao sao: %.2f e %.2f\n", x1, x2);
+    } else if (delta == 0) {
+        x1 = -coB / (2 * coA);
+        printf("A equacao possui uma raiz real e dupla: %.2f\n", x1);
+    } else {
+        printf("A equacao nao possui raizes reais.\n");
+    }
 
+    return 0;
+}*/
 
 
 
