@@ -342,7 +342,7 @@ int main (){
 }*/
 
 
-/* exercicio 10
+/* exercicio 10*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -374,7 +374,7 @@ int main() {
     }
 
     return 0;
-}*/
+}
 
 
 

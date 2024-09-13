@@ -127,7 +127,7 @@ int main(){
 
 //EXERCICIO 09
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(){
 	int a, b, troca1, troca2;
@@ -139,5 +139,5 @@ int main(){
 	troca2 = (a + b) - b;
 	printf("novo valor de a: %d\nnovo valor de b: %d", troca1, troca2);
 	
-	return 0;
-}
+	return 0;
+}*/
