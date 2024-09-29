@@ -227,6 +227,73 @@ int main(){
 	return 0;
 }
 */
+//9)
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+	int v1, v2, v3, var;
+	scanf("%d %d %d", &v1, &v2, &v3);
+	
+	while (v1==v2 || v1==v3 || v2==v3){
+		printf("nao digite valores iguais\n");
+		scanf("%d %d %d", &v1, &v2, &v3);
+	}
+	
+	if (v1>v2 && v1 > v3){
+		printf("%d", v1);
+	} else if (v2>v1 && v2 > v3){
+		printf("%d", v2);
+	} else {
+		printf("%d", v3);
+	}
+	
+	
+	
+	return 0;
+}
+*/
+
+//10)
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int l1, l2, l3;
+	scanf("%d %d %d", &l1, &l2, &l3);
+	while (l1<=0 || l2<=0 || l3<=0){
+		printf("digite valores positivos.\n");
+		scanf("%d %d %d", &l1, &l2, &l3);
+	}
+	
+	if (l1!=l2 && l2!=l3 && l1!=l3){
+		printf("triangulo escaleno");
+	} else if (l1==l2 && l2==l3){
+		printf("triangulo equilatero");
+	} else {
+		printf("triangulo isoscele");
+	}
+	
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
