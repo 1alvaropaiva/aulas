@@ -143,7 +143,7 @@ int main(){
 
     return 0;
 }*/
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -159,13 +159,63 @@ int main(){
     
     return 0;
 }
+*/
 
+/*
+#include <stdio.h>
 
+int main(){
+	int i, j, result;
+	for (j=1; j<=10; j++){
+		for (i=0; i<=10; i++){
+			result = j *(i);
+			printf("%d x %d = %d\n", j, i, result);	
+		}
+	}
+	
+	return 0;
+}*/
+/*
+#include <stdio.h>
 
+int main(){
+	int n, x;
+	scanf("%d", &n);
+	
+	for (x=1; x<=n; x++){
+		while ( n % x == 0){
+			printf("%d\n", x);
+			break;
+		}
+	}
+	
+	return 0;
+}
+*/
+/*
+#include <stdio.h>
 
+int main() {
+    int i, j;
 
+    printf("numeros primos de 1 a 100:\n");
 
+    for (i = 1; i <= 100; ++i) {
+        int isPrime = 1; 
+        for (j = 2; j < i; ++j) {
+            if (i % j == 0) {
+                isPrime = 0; 
+                break; 
+            }
+        }
+        if (isPrime) {
+            printf("%d ", i);
+        }
+    }
 
+    return 0;
+}
+*/
 
 
 
