@@ -3,10 +3,6 @@
 #include <math.h>
 #include <ctype.h>
 
-
-
-
-
 /*
 
 //lista 3 repeticao 

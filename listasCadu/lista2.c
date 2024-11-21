@@ -90,7 +90,6 @@ int main() {
 }
 */
 
-/* exercicio 4
 #include <stdio.h>
 #define UVA 5.50
 #define MORANGO 7.80
@@ -142,7 +141,7 @@ int main (){
 	}
 	
 	return 0;	
-}*/
+}
 
 
 /*exercicio 5
